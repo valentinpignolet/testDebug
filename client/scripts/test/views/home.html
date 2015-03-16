@@ -1,10 +1,11 @@
-<fa-app class="full-screen">
-	<fa-modifier>
-	    <fa-surface fa-size="[undefined, undefined]" class="full-height">
-	        <div class="div_1" ng-click="vm.click_1()">{{vm.count_1}}</div>
-	    	<div class="div_2" ng-click="vm.click_2()">{{vm.count_2}}</div>
-	    </fa-surface>
-	</fa-modifier>
-</fa-app>	
-
-	    
+<fa-view>
+    <fa-modifier fa-translate="vm.translate(vm.enterTransition.get())">
+        <fa-header-footer-layout>
+            <bar-header></bar-header>
+            <fa-modifier fa-size="[200,50]" ffa-align="[0.5,0.5]" ffa-origin="[0.5,0.5]">
+                <fa-surface fa-size="[undefined, undefined]" class="full-height">
+                    <button class="button" ui-sref="page1"> Page 1</button>
+                </fa-surface>
+            </fa-modifier>
+        </fa-header-footer-layout>
+</fa-view>

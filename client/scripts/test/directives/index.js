@@ -2,7 +2,6 @@
 
 module.exports = function(app) {
     // inject:start
-    require('./page1')(app);
-    require('./testCtrl')(app);
+    require('./barHeader')(app);
     // inject:end
 };
